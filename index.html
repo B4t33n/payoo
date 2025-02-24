@@ -10,7 +10,33 @@
     
 </head>
 <body class="bg-stone-700">
-    
+    <section class="h-screen w-3/12 bg-white mx-auto">
+        <div class="flex justify-center items-center pt-10">
+            <img class="w-48" src="payoo.png" alt="">
+        </div>
+
+        <!-- login from -->
+
+        <div class="mt-16">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+
+              <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <form class="card-body">
+                  <fieldset class="fieldset">
+                    <label class="fieldset-label">Number</label>
+                    <input value="01300000000" id="id-number" type="text" class="input rounded-full" placeholder="Your number" required />
+                    <label class="fieldset-label">Password</label>
+                    <input value="1234" id="pin-number" type="text" class="input rounded-full" placeholder="Password" required />
+                    <div><a class="link link-hover">Forgot password?</a></div>
+                    <button id="login-btn" class="btn btn-neutral mt-4 rounded-full">Login</button>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+          </div>
+
+
+    </section>
 
 
     <script src="js/login.js"></script>
