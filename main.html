@@ -14,13 +14,13 @@
 
 </head>
 <body class="bg-stone-700">
-    <section class="h-screen w-3/12 bg-white mx-auto">
+    <section class="min-h-screen max-w-md bg-white mx-auto">
         <nav class="flex justify-around items-center py-4">
             <div class="flex justify-center items-center" >
                 <img class="w-16 mr-4" src="payoo.png" alt="">
 
             <div>
-                <h2 class="font-bold text-2xl">$ 4500</h2>
+                <h2 class="font-bold text-2xl">$ <span id="main-amount">4500</span></h2>
                 <p>available balance</p>
             </div>
 
@@ -32,7 +32,7 @@
 
 
         <!-- money section -->
-         <section class="mt-10 space-y-3 px-2">
+         <section class="space-y-3 px-2 mt-4">
             <h1 class="text-2xl font-bold">🔥 Welcome to Payooo!</h1>
             <p class="text-gray-500">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
 
@@ -50,7 +50,7 @@
                     <p>Cashout</p>
                 </div>
 
-                <div class="border rounded-lg text-center p-4">
+                <div class="border rounded-lg text-center p-3">
                     <img src="image/money 1.png" class="mx-auto" alt="">
                     <p>Transfer Money</p>
                 </div>
@@ -77,8 +77,41 @@
          <!-- add money section -->
 
          <section>
-            
+
+            <h1 class="text-2xl font-bold p-2">Add Money</h1>
+
+            <div>
+                <div class="hero-content">
+    
+                  <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body">
+                      <fieldset class="fieldset">
+
+                        <label class="fieldset-label">Select A Bank</label>
+                        <select class="select rounded-full">
+                            <option disabled selected>Select Bank</option>
+                            <option value="Bikash">Bikash</option>
+                            <option value="Nogat">Nogat</option>
+                            <option value="Roket">Roket</option>
+                          </select>
+
+                        <label class="fieldset-label">Number</label>
+                        <input value="01300000000" id="id-number" type="text" class="input rounded-full" placeholder="Your number" required />
+                        <label class="fieldset-label">Add Amount</label>
+                        <input id="Amount" type="text" class="input rounded-full" placeholder="Enter Amount">
+                        <label class="fieldset-label">Password</label>
+                        <input value="1234" id="pin-number" type="text" class="input rounded-full" placeholder="Password" required />
+                        <div><a class="link link-hover">Forgot password?</a></div>
+                        <button id="cashin-btn" class="btn btn-neutral mt-4 rounded-full">Add Money</button>
+                      </fieldset>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
          </section>
     </section>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
