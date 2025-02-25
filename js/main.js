@@ -1,3 +1,4 @@
+
 document.getElementById("cashin-btn").addEventListener('click', function(even){
     even.preventDefault();
 
@@ -20,3 +21,5 @@ document.getElementById("cashin-btn").addEventListener('click', function(even){
 
     document.getElementById('Amount').value = '';
 })
+
+

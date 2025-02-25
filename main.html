@@ -26,7 +26,7 @@
 
             </div>
 
-            <button class="btn rounded-full bg-black text-white"> <i class="fa-solid fa-arrow-right-from-bracket rotate-180"></i> Log out</button>
+            <button id="logout" class="btn rounded-full bg-black text-white"> <i class="fa-solid fa-arrow-right-from-bracket rotate-180"></i> Log out</button>
         </nav>
         <hr>
 
@@ -40,14 +40,14 @@
             <!-- cards -->
 
             <div class="grid grid-cols-3 gap-5 mt-10">
-                <div class="border rounded-lg text-center p-4">
+                <div id="add-money-div" class="border rounded-lg text-center p-4">
                     <img src="image/wallet 1.png" class="mx-auto" alt="">
                     <p>Add money</p>
                 </div>
 
-                <div class="border rounded-lg text-center p-4">
+                <div id="cash-out-div" class="border rounded-lg text-center p-4">
                     <img src="image/send 1.png" class="mx-auto" alt="">
-                    <p>Cashout</p>
+                    <p>Cash Out</p>
                 </div>
 
                 <div class="border rounded-lg text-center p-3">
@@ -76,7 +76,7 @@
 
          <!-- add money section -->
 
-         <section>
+         <section id="add-money">
 
             <h1 class="text-2xl font-bold p-2">Add Money</h1>
 
@@ -110,8 +110,35 @@
               </div>
 
          </section>
+
+
+         <!-- cash out section -->
+         <section id="cash-out">
+            <h1 class="text-2xl font-bold p-2">Cash Out</h1>
+            <div >
+                <div class="hero-content">
+    
+                  <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body">
+                      <fieldset class="fieldset">
+
+                        <label class="fieldset-label">Number</label>
+                        <input value="01300000000" id="id-number" type="text" class="input rounded-full" placeholder="Your number" required />
+                        <label class="fieldset-label">Add Amount</label>
+                        <input id="Amount" type="text" class="input rounded-full" placeholder="Enter Amount">
+                        <label class="fieldset-label">Password</label>
+                        <input value="1234" id="pin-number" type="text" class="input rounded-full" placeholder="Password" required />
+                        <div><a class="link link-hover">Forgot password?</a></div>
+                        <button id="cashout-btn" class="btn btn-neutral mt-4 rounded-full">Cashout</button>
+                      </fieldset>
+                    </form>
+                  </div>
+                </div>
+              </div>
+         </section>
     </section>
 
     <script src="js/main.js"></script>
+    <script src="js/toggel.js"></script>
 </body>
 </html>
