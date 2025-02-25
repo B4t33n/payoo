@@ -17,6 +17,16 @@ document.getElementById("cashout-btn").addEventListener('click', function(even){
         if (convertedPinNumber === 1234) {
             const sum = convertedMainAmount - convertedAmount;
             document.getElementById('main-amount').innerText = sum;
+
+            const transaction = document.getElementById("transaction-container");
+
+            const div = document.createElement("div");
+            div.innerHTML = `
+            <h1>Cash Out Money From ${accountNumber}</h1>
+            <h3>Cash Out Balance ${amount} tk</h3>
+            `
+
+            transaction.appendChild(div);
         }else{
             alert('invalid pin number');
         }
