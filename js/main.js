@@ -37,3 +37,6 @@ document.getElementById("cashin-btn").addEventListener('click', function(even){
 })
 
 
+document.getElementById("logout").addEventListener("click", function(){
+    window.location.href = "index.html";
+})
