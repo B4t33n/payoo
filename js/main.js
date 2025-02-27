@@ -12,6 +12,11 @@ document.getElementById("cashin-btn").addEventListener('click', function(even){
     const convertedMainAmount = parseFloat(mainAmount); // main amount
     const bank = document.getElementById("all-bank").value;
 
+    if(amount < 0){
+        alert('Invalid Amount');
+        return;
+    }
+
 
     if (convertedPinNumber === 1234) {
         const sum = convertedMainAmount + convertedAmount;
@@ -22,6 +27,9 @@ document.getElementById("cashin-btn").addEventListener('click', function(even){
         const transaction = document.getElementById("transaction-container");
 
             const div = document.createElement("div");
+            div.classList.add('bg-blue-400');
+            div.classList.add('rounded-md');
+            div.classList.add('mx-2');
             div.innerHTML = `
             <h1>Added Money From ${accountNumber}</h1>
             <h3>Added Balance ${amount} tk</h3>
